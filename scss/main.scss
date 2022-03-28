@@ -92,12 +92,12 @@ h6 {
 $fontFamily: "Heebo";
 
 $minWidth: 320px;
-$maxWidth: 1152;
-$maxWidthContainer: 856;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$maxWidth: 1152px;
+$maxWidthContainer: 856px;
+$md1: $maxWidthContainer + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
 
 
 body {
@@ -116,16 +116,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: $fontFamily;
-
-    &._loaded {}
 }
 .page {
     padding: 90px 0 0 0;
     flex: 1 1 auto;
-    @media (max-width: $md1+px) {
+    @media (max-width: $md1) {
         padding: 30px 15px 0 15px;
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         padding: 20px 0 0 0;
     }
 }
@@ -137,7 +135,7 @@ body {
 
 .title-posts {
     font-size: 22px;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         text-align: center;
         font-size: 18px;
     }
@@ -162,16 +160,16 @@ a.works__image._ibg {
 
 .hi {
     padding: 40px 0 70px 0;
-    @media (max-width: $md1+px) {
+    @media (max-width: $md1) {
         padding: 0 0 70px 0;
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         padding: 0 0 60px 0;
     }
     &__container {
         display: flex;
         width: 100%;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             text-align: center;
             flex-direction: column-reverse;
             align-items: center;
@@ -182,17 +180,17 @@ a.works__image._ibg {
         flex: 1 1 auto;
         padding: 18px 110px 0 0;
         align-items: flex-start;
-        @media (max-width: $md1+px) {
+        @media (max-width: $md1) {
             padding: 18px 50px 0 0;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             padding: 0px 0px 0 0;
         }
     }
 
     &__title {
         margin: 0 0 25px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 0px 0 20px 0;
             padding: 0 15px;
         }
@@ -200,7 +198,7 @@ a.works__image._ibg {
 
     &__text {
         margin: 0 0 35px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 0 0 25px 0;
             padding: 0 15px;
         }
@@ -208,7 +206,7 @@ a.works__image._ibg {
 
     &__btn {
         margin: 33px 0 0 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 0 0 0 0;
         }
     }
@@ -224,7 +222,7 @@ a.works__image._ibg {
         img {
             max-width: 100%;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             flex: 0 0 170px;
             width: 170px;
             height: 170px;
@@ -237,7 +235,7 @@ a.works__image._ibg {
     font-weight: 500;
     color: #21243D;
     line-height: 60 / 44 * 100%;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         font-size: 32px;
     }
 }
@@ -275,10 +273,8 @@ a.works__image._ibg {
 .recent-posts {
     background: #EDF7FA;
     padding: 25px 15px 13px 15px;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         padding: 25px 15px 23px 15px;
-    }
-    &__container {
     }
 
     &__header {
@@ -301,7 +297,7 @@ a.works__image._ibg {
 
     &__items {
         margin: 0 -10px;
-        @media (min-width: $md3+px) {
+        @media (min-width: $md3) {
             display: flex;
         }
     }
@@ -311,9 +307,6 @@ a.works__image._ibg {
         padding: 0 10px;
         margin: 0 0 17px 0;
     }
-
-    &__item {
-    }
 }
 
 .recent-post {
@@ -322,7 +315,7 @@ a.works__image._ibg {
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(187, 225, 250, 0.25);
     padding: 20px;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         padding: 15px;
     }
     &__title {
@@ -333,12 +326,12 @@ a.works__image._ibg {
         line-height: 38 / 26 * 100%;
         transition: color 0.3s ease 0s;
         margin: 0 0 17px 0;
-        @media (min-width: $md2+px) {
+        @media (min-width: $md2) {
             &:hover {
                 color: #ff6464;
             }
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 22px;
             margin: 0 0 10px 0;
         }
@@ -352,7 +345,7 @@ a.works__image._ibg {
         span {
             margin: 0 25px;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 16px;
             margin: 0 0 10px 0;
         }
@@ -368,10 +361,8 @@ a.works__image._ibg {
 
 .featured-works {
     margin: 30px 0 80px 0;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         margin: 10px 0 0 0;
-    }
-    &__container {
     }
 
     &__title {
@@ -379,7 +370,7 @@ a.works__image._ibg {
         font-size: 22px;
         line-height: 60 / 22 * 100%;
         margin: 0 0 20px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 0px 0 0 0;
         }
     }
@@ -388,7 +379,7 @@ a.works__image._ibg {
 
 .works {
 
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         padding: 10px 15px 23px 15px;
         display: flex;
         overflow: auto;
@@ -400,11 +391,11 @@ a.works__image._ibg {
         &:last-child {
             margin-bottom: 52px;
         }
-        @media (min-width: $md3+px) {
+        @media (min-width: $md3) {
             display: flex;
             align-items: flex-start;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             flex: 0 0 90%;
             margin: 0 15px 50px 0;
         }
@@ -416,7 +407,7 @@ a.works__image._ibg {
         min-height: 180px;
         display: block;
         overflow: hidden;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             padding: 0 0 50% 0;
             margin: 0 0 17px 0;
         }
@@ -424,7 +415,7 @@ a.works__image._ibg {
 
     &__body {
         flex: 1 1 auto;
-        @media (min-width: $md3+px) {
+        @media (min-width: $md3) {
             margin: 0 0 0 20px;
         }
     }
@@ -436,10 +427,10 @@ a.works__image._ibg {
         margin: 0 0 15px 0;
         color: inherit;
         transition: color 0.3s ease 0s;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 24px;
         }
-        @media (min-width: $md2+px) {
+        @media (min-width: $md2) {
             &:hover {
                 color: #ff6464;
             }
@@ -480,7 +471,7 @@ a.works__image._ibg {
     font-weight: 700;
     font-size: 30px;
     line-height: 60 / 30 * 100%;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         margin: 0 0 15px 15px;
     }
 }
@@ -509,7 +500,7 @@ a.works__image._ibg {
         font-size: 34px;
         line-height: 50 / 34 * 100%;
         margin: 0 0 30px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 30px;
         }
     }
@@ -537,7 +528,7 @@ a.works__image._ibg {
         align-self: center;
         line-height: 25 / 20 *100%;
         margin: 0 0 0 25px;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 18px;
         }
     }
@@ -569,27 +560,23 @@ a.works__image._ibg {
 .blog {
     padding: 0 15px 50px 15px;
     margin-bottom: 50px;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         margin: 0 0 60px 0;
         padding: 0 15px 60px 15px;
     }
     &__main-title {
         margin: 0 0 50px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 30px;
             margin: 0 0 20px 0;
         }
-    }
-
-    &__items {
-
     }
 
     &__item {
         border-bottom: 1px solid #E0E0E0;
         padding: 0 0 30px 0;
         margin: 0 0 40px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 0 0 20px 0;
             padding: 0 0 20px 0;
         }
@@ -601,12 +588,12 @@ a.works__image._ibg {
         line-height: 44px;
         color: inherit;
         transition: color 0.3s ease 0s;
-        @media (min-width: $md2+px) {
+        @media (min-width: $md2) {
             &:hover {
                 color: #ff6464;
             }
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             font-size: 26px;
             line-height: 38 / 26 * 100%;
         }
@@ -622,7 +609,7 @@ a.works__image._ibg {
         span {
             margin: 0 25px;
         }
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 5px 0 0 0; 
             font-weight: 400;
             font-size: 16px;
@@ -634,8 +621,8 @@ a.works__image._ibg {
         font-weight: 400;
         font-size: 20px;
         line-height: 29 / 20 * 100%;
-         color: #8695A4;
-        @media (max-width: $md3+px) {
+        color: #8695A4;
+        @media (max-width: $md3) {
             font-weight: 400;
             font-size: 16px;
             line-height: 24 / 16 * 100%;
@@ -644,7 +631,7 @@ a.works__image._ibg {
 
     &__text {
         margin: 5px 0 0px 0;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             margin: 20px 0 0px 0; 
         }
     }
