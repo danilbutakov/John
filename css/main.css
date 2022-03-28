@@ -333,10 +333,15 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 146.6666666667%;
-  margin: 0 0 15px 0; }
+  margin: 0 0 15px 0;
+  color: inherit;
+  transition: color 0.3s ease 0s; }
   @media (max-width: 767.98px) {
     .works__title {
       font-size: 24px; } }
+  @media (min-width: 991.98px) {
+    .works__title:hover {
+      color: #ff6464; } }
 .works__info {
   display: flex;
   align-items: center;
@@ -424,5 +429,3 @@ body {
     font-size: 20px;
     line-height: 145%;
     color: #8695A4; }
-
-/*# sourceMappingURL=main.css.map */

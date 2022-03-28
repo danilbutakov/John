@@ -430,8 +430,15 @@ body {
         font-size: 30px;
         line-height: 44 / 30 * 100%;
         margin: 0 0 15px 0;
+        color: inherit;
+        transition: color 0.3s ease 0s;
         @media (max-width: $md3+px) {
             font-size: 24px;
+        }
+        @media (min-width: $md2+px) {
+            &:hover {
+                color: #ff6464;
+            }
         }
     }
 
