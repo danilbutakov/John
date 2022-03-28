@@ -54,6 +54,9 @@
   color: #000;
   transition: color 0.3s ease 0s;
 }
+.menu__link._active {
+  color: #ff6464;
+}
 @media (min-width: 991.98px) {
   .menu__link:hover {
     color: #ff6464;
