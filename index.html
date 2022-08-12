@@ -9,6 +9,7 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -33,7 +34,7 @@
         <main class="page">
             <section class="hi">
                 <div class="hi__container _container">
-                    <div class="hi__content">
+                    <div class="hi__content" data-aos="fade-down" data-aos-duration="1000">
                         <h1 class="hi__title title">
                             Hi, I am John,<br>
                             Creative Technologist
@@ -51,18 +52,18 @@
             <section class="recent-posts">
                 <div class="recent-posts__container _container">
                     <div class="recent-posts__header">
-                        <div class="recent-posts__title title-posts">Recent posts</div>
-                        <a href="" class="recent-posts__view-all">View all</a>
+                        <div class="recent-posts__title title-posts" data-aos="fade-right" data-aos-duration="1000">Recent posts</div>
+                        <a href="" class="recent-posts__view-all" data-aos="fade-left" data-aos-duration="1000">View all</a>
                     </div>
                     <div class="recent-posts__items">
-                        <div class="recent-posts__column">
+                        <div class="recent-posts__column" data-aos="flip-left" data-aos-duration="1500">
                            <article class="recent-posts__item recent-post">
                             <a href="" class="recent-post__title">Creating pixel perfect icons in Figma</a>
                             <div class="recent-post__info">12 Feb 2020 <span>|</span> Design, Pattern</div>
                             <div class="recent-post__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
                            </article> 
                         </div>
-                        <div class="recent-posts__column">
+                        <div class="recent-posts__column" data-aos="flip-right"data-aos-duration="1500">
                             <article class="recent-posts__item recent-post">
                              <a href="" class="recent-post__title">Making a design system from scratch</a>
                              <div class="recent-post__info">12 Feb 2020 <span>|</span> Figma, Icon Design</div>
@@ -76,7 +77,10 @@
                 <div class="featured-works__container _container">
                     <div class="featured-works__title title-posts">Featured works</div>
                     <div class="featured-works__items works">
-                        <article class="works__item">
+                        <article class="works__item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
                             <a href="article.html" class="works__image _ibg">
                                 <img src="img/Featured works/Rectangle 30.png" alt="">
                             </a>
@@ -89,7 +93,10 @@
                                 <div class="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
                             </div>
                         </article>
-                        <article class="works__item">
+                        <article class="works__item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
                             <a href="" class="works__image _ibg">
                                 <img src="img/Featured works/Rectangle 32.png" alt="">
                             </a>
@@ -102,7 +109,10 @@
                                 <div class="works__text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
                             </div>
                         </article>
-                        <article class="works__item">
+                        <article class="works__item" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
                             <a href="" class="works__image _ibg">
                                 <img src="img/Featured works/Rectangle 34.png" alt="">
                             </a>
@@ -131,5 +141,9 @@
             <div class="footer__copy">Copyright ©2020 All rights reserved </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
